@@ -28,6 +28,10 @@ boot2.flag---------------/atmosphere/contents/4200000000003103/flags--------Mand
 
 parental_control.ovl-----/switch/.overlays-------------------------------------------The overlay
 
+en.json------------------/switch/.overlays/lang/ParentalControl-----------------------English 
+
+zh-Hans.json------------/switch/.overlays/lang/ParentalControl-----------------------Chinese
+
 After copying the files, reboot the console.
 
 
