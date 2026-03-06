@@ -4,6 +4,11 @@ Using my spare time, I modified the code with the help of AI to adapt it for the
 
 The code has been localized using AI, with the default language set to Chinese. Users can choose to switch to English in the plugin's settings, but this feature has not been tested.
 
+Known issues: 
+1. When the game returns to the home screen and runs in the background, it will still continue to count time;
+2. When the last user exits the game and other plugins are running, the game process is not zero, and the timing will still be carried out for the last logged-in user;
+3. In some games, the timeout lock screen does not appear; it only displays after returning to the home screen;
+
 Here, I would like to express my heartfelt gratitude to the original author.
 -------------------------------------------------------------------------------
 Installation
@@ -38,6 +43,11 @@ After copying the files, reboot the console.
 原作者仓库地址：https://github.com/TristanIsrael/NSParentalControl 这是一个在SWITCH大气层系统下运行的一个家长控制插件，原作者的代码在大气层1.9.5，SWITCH固件版本20.5.0下无法正常工作，自己用业余时间通过AI对代码进行了修改，适配了20.5.0系统，由于自己不懂代码，只是用AI对代码做了适配，部分功能仍存在很多BUG。目前实现的功能是：对每个用户单独设置限制时间，时间到了后显示超时屏幕且5分钟后才会自动关闭（在这期间无法正常进行游戏，因为看不到游戏画面，只有声音），不再通过按开机键进行重启，5分钟后超时屏幕关闭，中间有时间让当前用户保存和退出游戏，之后如果用户仍未退出，则继续显示超时屏幕来阻止用户进行游玩，基本满足了我个人的使用要求。由于我不会用GITHUB，将所有更改后的代码和编译后的插件压缩后上传到了GITHUB，大家可以随意下载和优化。
 用AI对代码进行了汉化，默认为中文语言，插件中添加了语言选项，可选英文。
 安装方法参照原作者的即可。
+
+已知问题：
+1、游戏在返回主页后台运行时，依然会继续计时；
+2、当最后一个用户退出游戏后，运行了其他插件，游戏进程不为零时，依然会对最后登录的用户进行计时；
+3、个别游戏下，超时锁屏画面不会显示，只有返回主页后才显示；
 
 测试平台：
 SWITCH固件版本20.5.0
